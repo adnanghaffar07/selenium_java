@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Seller Matrix  App Automation">
+  <listeners>
+    <listener class-name="com.sellermatrix.listeners.ExtentListeners"/>
+    <listener class-name="com.sellermatrix.errorCollectors.TestListenerAdapter" /> 
+  </listeners>
+  <test name="Seller Matrix App Automation - Tests">
+    <classes>
+      	<class name="com.sellermatrix.test.TestLogin"/>
+      	<class name="com.sellermatrix.test.TestDashboard"/>
+    </classes>
+  </test>
+</suite> 
+ 	 	
